@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <!--    Trường hợp 1-->
+    <script src="script.js"></script>
+
+    <!--    Trường hợp 2-->
+    <script src="js/scriptInFolderChildren.js"></script>
+
+    <!--    Trường hợp 3-->
+    <script src="../lib/scriptExternal.js"></script>
+
+    <!--    Trường hợp 2-->
+    <script src="../../ReactJS/Code/Demo_Arrow_Function/script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Demo nhúng file JavaScript vào trong tài liệu HTML</h2>
+<div class="container">
+    <ul>
+        <ul>
+            <h3>Trường hợp 1: .html và .js cùng cấp.</h3>
+            <li> &emsp;&emsp;- Ta đặt giá trị của thuộc tính src trong thẻ script là tên file .js</li>
+
+            <br>
+
+            <h3>Trường hợp 2: .html nằm khác cấp(cấp ngoài so với .js)</h3>
+            <li> &emsp;&emsp;- Ta đặt giá trị của thuộc tính src trong thẻ script là tên các folder chứa file .js</li>
+
+            <br>
+
+            <h3>Trường hợp 3: .html nằm khác cấp(cấp trong so với .js)</h3>
+            <li> &emsp;&emsp;- Trước khi chỉ định tên file ta phải sử dụng '../' để đi ra một cấp so với vị trị hiện
+                tại,... Cho tới khi chúng cùng cấp với nhau.
+            </li>
+
+            <br>
+
+            <h3>Trường hợp 4: .html và .js khác cấp khác cấp.</h3>
+            <li> &emsp;&emsp;- Để đi ra 1 cấp ta sử dụng '../' để đi vào một cấp ta chỉ định tên forder.</li>
+        </ul>
+    </ul>
+</div>
+
+<footer>@hieumai1905</footer>
+</body>
+</html>
